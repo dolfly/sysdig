@@ -31,7 +31,10 @@ limitations under the License.
 
 #include <libsinsp/sinsp.h>
 #include <libsinsp/sinsp_cycledumper.h>
-#include "scap_open_exception.h"
+#include <libsinsp/scap_open_exception.h>
+#include <libsinsp/utils.h>
+#include <libsinsp/plugin.h>
+#include <libsinsp/plugin_manager.h>
 #include <chisel/chisel_capture_interrupt_exception.h>
 #ifdef HAS_CAPTURE
 #ifndef WIN32
@@ -44,9 +47,6 @@ limitations under the License.
 #include <chisel/chisel_utils.h>
 #include <chisel/chisel_fields_info.h>
 #endif
-#include "utils.h"
-#include "plugin.h"
-#include "plugin_manager.h"
 
 #include "utils/sinsp_opener.h"
 #include "utils/plugin_utils.h"
